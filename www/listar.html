@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/jquery.min.js"</script>
+  <script src="lib/banco.js"></script>
+  <!--mapquest-->
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
+
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    $(document).ready(function(){
+      listar();
+    });
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2>Lista de Pessoa</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="">Lista de pessoas::</label>
+        <select type="text" class="form-control" id="listaPessoas" readonly></select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="">Codigo:</label>
+        <input type="text" class="form-control" id="codigo" readonly>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="">Nome</label>
+        <input type="text" class="form-control" id="nome">
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="">Email</label>
+        <input type="text" class="form-control" id="email">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="">Senha</label>
+        <input type="text" class="form-control" id="senha">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <div class="form-group">
+        <button class="btn btn-success btn-block botao" id="salvarEdit">Salvar</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <div class="form-group">
+        <button class="btn btn-primary btn-block botao" id="editar">Editar</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <div class="form-group">
+        <button class="btn btn-warning btn-block botao" id="cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <div class="form-group">
+        <button class="btn btn-danger btn-block botao" id="Excluir">Excluir</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
