@@ -47,7 +47,7 @@ function listar(){
   });
 }
 
-$(document).on("change", "listaPessoas", function(){
+$(document).on("change", "#listaPessoas", function(){
   var parametros = {
     "codigo" : $("optionselected", ("#listaPessoas")).val() 
   }
@@ -71,7 +71,8 @@ $(document).on("change", "listaPessoas", function(){
 
 function liberarCampos(){
   $("#nome").prop("readonly",false);
-  $("#email").prop("readonly",false);    $("#senha").prop("readonly",false);
+  $("#email").prop("readonly",false);    
+  $("#senha").prop("readonly",false);
 }
 function desabilitarCampos(){
   $("#nome").prop("readonly",true);
@@ -79,16 +80,16 @@ function desabilitarCampos(){
   $("#senha").prop("readonly",true);
 }
 
-$(docment).on("click","#editar",function(){
+$(document).on("click","#editar",function(){
   liberarCampos();
 });
 
-$(docment).on("click","#cancelar",function(){
+$(document).on("click","#cancelar",function(){
   desabilitarCampos();
 });
 
 
-$(docment).on("click","#salvarEdit",function(){
+$(document).on("click","#salvarEdit",function(){
   var parametros ={
   "codigo":$("#codigo").val(),
   "nome":$("#nome").val(),
@@ -110,7 +111,7 @@ $(docment).on("click","#salvarEdit",function(){
   });
 });
 
-$(docment).on("click","#excluir",function(){
+$(document).on("click","#excluir",function(){
   var parametros ={
   "codigo":$("#codigo").val(),
   }
